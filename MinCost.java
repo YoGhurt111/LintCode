@@ -1,3 +1,4 @@
+// LintCode 房屋染色问题
 public class MinCost{
   public static void main(String[] args) {
     int[][] a = {{14,2,11},{11,14,5},{14,3,10}};
@@ -17,11 +18,13 @@ public class MinCost{
     for (int i = 1; i < m; i++) {
       for(int j = 0; j < n; j++){
         d[i][j] = 999999;
-        if ((d[i-1][(j+1)%n] + costs[i][j])<d[i][j]) {
-          d[i][j] = d[i-1][(j+1)%n] + costs[i][j];
-        }
-        if ((d[i-1][(j+2)%n] + costs[i][j])<d[i][j]) {
-          d[i][j] = d[i-1][(j+2)%n] + costs[i][j];
+        for(int k = 1; k<n;k++){
+          if ((d[i-1][(j+1)%n] + costs[i][j])<d[i][j]) {
+            d[i][j] = d[i-1][(j+1)%n] + costs[i][j];
+          }
+          if ((d[i-1][(j+2)%n] + costs[i][j])<d[i][j]) {
+            d[i][j] = d[i-1][(j+2)%n] + costs[i][j];
+          }
         }
       }
     }
