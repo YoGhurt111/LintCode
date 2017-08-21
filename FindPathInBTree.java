@@ -14,7 +14,7 @@ public class FindPathInBTree{
     target -= root.val;
     list.add(root.val);
     if (target == 0 && root.left == null && root.right == null) {
-      pathList.add(new ArrayList<Integer>(list);
+      pathList.add(new ArrayList<Integer>(list));
     }
     if (root.left != null) {
       FindPath(root.left, target);
