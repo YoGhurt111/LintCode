@@ -1,3 +1,4 @@
+// LintCode 背包问题
 public class BackPackII{
   public static void main(String[] args) {
     int[] A = {2,3,5,7};

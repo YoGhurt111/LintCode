@@ -1,4 +1,4 @@
-// LintCode 背包问题
+// LintCode 背包
 public class BackPack{
   public static void main(String[] args) {
     int m = 12;
@@ -13,7 +13,6 @@ public class BackPack{
     if (A.length == 0) {
       return 0;
     }
-    int max = 0;
     int[][] v = new int[A.length+1][m+1];
     for (int i=0; i <= m; i++) {
       v[0][i] = 0;
