@@ -1,3 +1,4 @@
+// LintCode 打劫房屋
 public class HouseRobber{
   public static void main(String[] args) {
     int[] A = {3,8,4,1,5};
