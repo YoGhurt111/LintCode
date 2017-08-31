@@ -1,12 +1,9 @@
-import java.util.ArrayList;
+import java.lang.Math;
 public class Test{
   public static void main(String[] args) {
-    ArrayList<Integer> list = new ArrayList<Integer>();
-    test(list);
-    System.out.println(list.get(0));
+    
+    System.out.println(Math.round(3.14));
   }
 
-  public static void test(ArrayList list){
-    list.add(1);
-  }
+
 }
