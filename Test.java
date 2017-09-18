@@ -1,8 +1,7 @@
-import java.lang.Math;
+import java.util.*;
 public class Test{
   public static void main(String[] args) {
-    
-    System.out.println(Math.round(3.14));
+    int[][] a = new int[2][];
   }
 
 
