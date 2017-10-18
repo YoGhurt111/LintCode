@@ -14,6 +14,9 @@ public class GenerateParenthesis{
   }
 
   public static void backtrack(List<String> list, int left, int right, String temp, int n){
+    if (left>right) {
+      return;
+    }
     if (temp.length() == n*2) {
       list.add(temp);
       return;
