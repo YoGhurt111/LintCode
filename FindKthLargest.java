@@ -48,7 +48,7 @@ public class FindKthLargest{
   *** Comparator<Integer> cmp = new Comparator<Integer>(){
   ***   public int compare(Integer e1, Integer e2){return e2-e1;}
   *** };
-  *** PriorityQueue<Integer> pq = new PriorityQueue<Integer>(cmp);
+  *** PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
   *** 平均时间复杂度O(N*logk)
   **/
 //   public static int findKthLargest(int[] nums, int k) {
